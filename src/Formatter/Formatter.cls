@@ -7,7 +7,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
-'@Folder "PLoggerProject.src.Formatters.Formatter"
+'@Folder "PLoggerProject.src.Formatter"
 Option Explicit
 
 Private Type TFormatter

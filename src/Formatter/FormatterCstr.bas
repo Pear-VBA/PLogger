@@ -1,5 +1,5 @@
 Attribute VB_Name = "FormatterCstr"
-'@Folder "PLoggerProject.src.Formatters.Formatter"
+'@Folder "PLoggerProject.src.Formatter"
 Option Explicit
 
 Public Function NewFormatter(Optional ByVal Fmt As String = "{levelname}:{name}:{message}") As Formatter
