@@ -1,2 +1,6 @@
-*PearLogger.xlsb
+*PLogger.xlsb
 Excel
+.ppm
+
+*.log
+*.py
