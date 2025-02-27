@@ -17,6 +17,13 @@ Public Function StreamHandler() As Handler
     Set StreamHandler = NewStreamHandler()
 End Function
 
+Public Function FileHandler( _
+    ByVal FilePath As String, _
+    Optional ByVal Mode As IOMode = IOMode.Appending, _
+    Optional ByVal Encoding As String = "utf-8" _
+) As Handler
+    Set FileHandler = NewFileHandler(FilePath, Mode, Encoding)
+End Function
 
 Public Property Get LoggersCount() As Long
     If this.Loggers Is Nothing Then
