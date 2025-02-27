@@ -13,9 +13,10 @@ Public Property Get Root() As PLogger
     Set Root = this.Root
 End Property
 
-Public Property Get StreamHandler() As Handler
+Public Function StreamHandler() As Handler
     Set StreamHandler = NewStreamHandler()
-End Property
+End Function
+
 
 Public Property Get LoggersCount() As Long
     If this.Loggers Is Nothing Then
@@ -37,11 +38,14 @@ Public Function GetLogger(ByVal Name As String) As PLogger
     Set GetLogger = this.Loggers(Name)
 End Function
 
+Public Sub Clean()
+    Set this.Loggers = Nothing
+End Sub
+
 Private Sub CreateRoot()
     Set this.Loggers = NewDictionary()
     Set this.Root = NewPLogger("Root")
     this.Root.SetLevel LogLevels.llError
     this.Root.AddHandler NewStreamHandler()
-
     Set this.Loggers(this.Root.Name) = this.Root
 End Sub

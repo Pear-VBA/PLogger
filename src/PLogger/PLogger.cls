@@ -45,6 +45,7 @@ Public Sub AddHandler(ByRef Handler As Handler)
     If this.Handlers Is Nothing Then
         Set this.Handlers = NewDictionary()
     End If
+
     Set this.Handlers(Handler.Name) = Handler
 End Sub
 
