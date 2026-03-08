@@ -3,7 +3,9 @@ Attribute VB_Name = "package"
 '{
 '  "name": "PLogger",
 '  "version": "1.0.0",
+'  "author": "Pear-VBA",
+'  "prefix": "PLOG",
+'  "license": "MIT",
 '  "description": "Logger for VBA.",
-'  "author": "artemdorozhkin",
-'  "git": ""
+'  "homepage": "https://github.com/Pear-VBA/plogger.git"
 '}
